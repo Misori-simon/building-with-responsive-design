@@ -120,6 +120,7 @@ h1.hide {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
+
 }
 
 .banner-details > * {
@@ -127,5 +128,10 @@ h1.hide {
 }
 
 .banner-details .iconify {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-right: 0.5rem;
+}
+
+.author:hover {
+  font-weight: bold;
 }
