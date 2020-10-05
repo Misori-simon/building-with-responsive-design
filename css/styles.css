@@ -135,3 +135,39 @@ h1.hide {
 .author:hover {
   font-weight: bold;
 }
+
+.latest-news p a, span{
+  font-size: 13px;
+  color: #aaa;
+}
+
+.section-header{
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.latest-news h3{
+  color: #000;
+  font-size: 16px;
+}
+
+@media(max-width: 1023px){
+  .grid-4-columns{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 767px) {
+  .latest-news .grid-4-columns{
+    grid-template-columns: 1fr;
+  }
+  .latest-news .grid-4-columns article figure{
+    display: flex;
+  }
+  .latest-news .grid-4-columns article img{
+    margin-right: 10px;
+    height: 75px;
+    width: 75px;
+  }
+}
