@@ -86,7 +86,7 @@ h1.hide {
 
 .banner-item {
   border: 1px solid red;
-  height: 15rem;
+  min-height: 30vh;
   margin-top: 1rem;
   position: relative;
 }
@@ -500,7 +500,7 @@ footer .f-bottom p {
   width: 4rem;
 }
 
- /* @media(max-width: 1023px){ 
+ /* @media(max-width: 1023px){
   header{
     margin-left: 100px;
   }
@@ -558,18 +558,149 @@ footer .f-bottom p {
   }
 }  */
 
-@media(min-width: 767px) {
- body{ background-color: red;
+/* dispaly  none for mpbile */
+
+.top-nav-wrap,
+.tablet-nav {
+  display: none;
 }
+
+@media (min-width: 767px) {
+  /* items to hide */
+  .no-tablet {
+    display: none;
+  }
+
+  /* navigation changes */
+
+  .top-nav-wrap {
+    display: flex;
+    padding: 1rem 0;
+    background-color: #000;
+  }
+
+  .top-nav-wrap .iconify {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid green;
+  }
+
+  .top-nav-left {
+    padding-left: 12rem;
+  }
+
+  .top-nav-right {
+    width: auto;
+  }
+
+  .top-nav-item {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .top-nav-link {
+    color: #fff;
+  }
+
+  .nav-wrap {
+    display: flex;
+    justify-content: start;
+  }
+
+  .tablet-nav {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    min-width: 60rem;
+    padding-left: 1rem;
+    border: 1px solid green;
+  }
+
+  .tablet-nav-item {
+    font-size: 1.4rem;
+    margin: 0 1rem;
+  }
+
+  .tablet-nav-link {
+    color: #7a7a7a;
+    text-transform: uppercase;
+  }
+
+  /* banner changes */
+  .banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 0.8rem;
+    padding-top: 0.8rem;
+    height: 60vh;
+  }
+
+  .banner-item {
+    margin: 0;
+    height: 100%;
+  }
+  .banner .hide{
+    display: none;
+  }
+
+  .banner-one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .banner-two {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .banner-three {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .banner-one .banner-title {
+    font-size: 4rem;
+  }
+
+  /* latest news changes */
+
+  .latest-news-grid {
+
+  }
+
 }
 
-@media(min-width: 1023px) {
-  body{ background-color: blue;
- }
- }
+@media (min-width: 1023px) {
+  /* naviagtion changes */
+  .mobile-logo {
+    display: none;
+  }
 
+  .top-nav-left {
+    padding-left: 1rem;
+  }
 
+  /* banner */
+  .banner {
+    height: 75vh;
+  }
 
+  .banner-one .banner-title {
+    font-size: 6rem;
+  }
 
+  .banner-two .banner-title,
+  .banner-three .banner-title {
+    font-size: 2.5rem;
+  }
 
-
+  /* latest news changes */
+}
