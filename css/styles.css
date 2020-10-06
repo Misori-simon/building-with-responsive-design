@@ -436,7 +436,7 @@ h1.hide {
   padding: 42px 0;
 }
 
-.f-top .s-icons {
+.f-top .s-icons  {
   margin-bottom: 21px;
 }
 
@@ -468,8 +468,13 @@ h1.hide {
   display: flex;
 }
 
+.s-icons .iconify{
+  font-size: 2rem;
+}
+
 .f-top .s-icons li {
   background-color: #333;
+  color: #fff;
   align-items: center;
   justify-content: center;
   padding: 10px;
@@ -489,3 +494,82 @@ footer .f-bottom p {
   margin: 0 10px;
   color: #aaa;
 }
+
+ .f-bottom img{
+
+  width: 4rem;
+}
+
+ /* @media(max-width: 1023px){ 
+  header{
+    margin-left: 100px;
+  }
+}
+
+@media(max-width: 1023px){
+  .grid-4-columns .latest-funding-grid>article:nth-last-child(4){
+    display: none;
+  }
+}
+
+@media(max-width: 1023px){
+  .grid-4-columns{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 767px){
+  .latest-news .grid-4-columns{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media(min-width: 1023px){
+  .latest-funding-rounds-hadere-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media(min-width: 767px) and (max-width: 1023px) {
+  .article-middle, .article-bottom{
+    padding: 16px;
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 767px) {
+  .grid-4-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 767px) {
+  .grid-3-columns .categories-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(max-width: 1023px){
+  .latest-funding-rounds .article{
+    width: 253px;
+  }
+}  */
+
+@media(min-width: 767px) {
+ body{ background-color: red;
+}
+}
+
+@media(min-width: 1023px) {
+  body{ background-color: blue;
+ }
+ }
+
+
+
+
+
+
