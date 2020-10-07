@@ -55,11 +55,11 @@ html {
   gap: 24px;
 }
 
-.grid-4-columns{
+.latest-news-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 24px;
+  gap: 24px; */
 }
 
 .flex{
@@ -172,29 +172,26 @@ h1.hide {
   color: #000;
 }
 
-.latest-news{
+.latest-news {
   margin-top: 30px;
 }
+
 .latest-news h3{
   color: #000;
   font-size: 16px;
 }
 
-.grid-4-columns {
-  grid-template-columns: repeat(3, 1fr);
+.latest-news-grid article {
+  padding: 1rem 0;
 }
 
-.latest-news .grid-4-columns {
-  grid-template-columns: 1fr;
-}
-
-.latest-news .grid-4-columns article figure {
+.latest-news-grid article figure {
   display: flex;
 }
 
-.latest-news .grid-4-columns article img {
+.latest-news-grid article img {
   margin-right: 10px;
-  height: 75px;
+  min-height: 75px;
   width: 75px;
 }
 
@@ -278,13 +275,15 @@ h1.hide {
   padding: 1rem 0;
 }
 
-.latest-funding-header ul li a {
-  color: var(--color-red);
-  padding-right: 15px;
+.latest-funding-header p {
+  color: #f42;
   font-size: 1.5rem;
 }
+.latest-funding-header p a {
+  padding: 1.5rem;
+}
 
-.latest-funding-header ul li a:hover {
+.latest-funding-header p a:hover {
   color: #000;
 }
 
@@ -507,19 +506,19 @@ footer .f-bottom p {
 }
 
 @media(max-width: 1023px){
-  .grid-4-columns .latest-funding-grid>article:nth-last-child(4){
+  .latest-news-grid .latest-funding-grid>article:nth-last-child(4){
     display: none;
   }
 }
 
 @media(max-width: 1023px){
-  .grid-4-columns{
+  .latest-news-grid{
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media(max-width: 767px){
-  .latest-news .grid-4-columns{
+  .latest-news .latest-news-grid{
     grid-template-columns: 1fr;
   }
 
@@ -541,7 +540,7 @@ footer .f-bottom p {
 }
 
 @media(min-width: 767px) {
-  .grid-4-columns {
+  .latest-news-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -671,10 +670,33 @@ footer .f-bottom p {
   }
 
   /* latest news changes */
-
-  .latest-news-grid {
-
+  .section-header {
+    padding-bottom: 2rem;
   }
+  .latest-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-gap: 2rem;
+    -moz-grid-gap: 2rem;
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .latest-news-grid article {
+    padding: 0;
+  }
+
+  .latest-news-grid article figure {
+    display: block;
+  }
+
+  .latest-news-grid article img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* latest funding area */
+
 
 }
 
@@ -703,4 +725,16 @@ footer .f-bottom p {
   }
 
   /* latest news changes */
+  .latest-news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* latest funding section */
+  .latest-funding-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+    margin: 0;
+  }
 }
