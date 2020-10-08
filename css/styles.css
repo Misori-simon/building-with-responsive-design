@@ -16,6 +16,10 @@ html {
 }
 
 .header {
+  position: fixed;
+  width: 100vw;
+  z-index: 99;
+  background-color: #fff;
   padding-right: 0.1rem;
 }
 
@@ -645,6 +649,16 @@ footer .f-bottom p {
     display: none;
   }
 
+  .latest-funding-header p a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+  }
+
+  .pipe {
+    display: inline;
+    color: #f42;
+  }
+
   .categories-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -658,6 +672,9 @@ footer .f-bottom p {
     font-size: 1.2rem;
   }
 
+  .funding-article-tag {
+    display: block;
+  }
   /* footer */
 
   .f-bottom {
@@ -731,18 +748,8 @@ footer .f-bottom p {
     justify-content: space-between;
   }
 
-  .latest-funding-header p a {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-  }
-
   .last-funding {
     display: inline-block;
-  }
-
-  .pipe {
-    display: inline;
-    color: #f42;
   }
 
   .categories-grid {
