@@ -358,6 +358,89 @@ span {
   padding: 172px 10px 10px 10px;
 } /* stylelint-enable */
 
+.categories-article-header-1 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-2.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-2 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-3.png");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-3 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-4.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-4 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-5.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-5 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-6.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-6 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-2.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-7 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-4.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+.categories-article-header-8 {
+  background: linear-gradient( 337deg, rgba(0, 0, 0, 0.9) 30%,
+  rgba(17, 8, 8, 0.6) 50%),
+  url("../images/article-5.jpg");
+  grid-area: showcase-item1;
+  min-height: 40rem;
+  position: relative;
+  padding: 172px 10px 10px 10px;
+} 
+
+
+
+
 .categories-article-header .banner-cat,
 .banner-title,
 .banner-details {
@@ -393,7 +476,7 @@ span {
 }
 
 .categories-article-image-wrapper {
-  max-width: 96px;
+  max-width: 25%;
   height: 96px;
 }
 
