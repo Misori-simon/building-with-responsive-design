@@ -12,7 +12,7 @@ This project is about building a responsive website using the various positionin
 
 ![screenshot](./images/screenshot.png)
 
-This project is about building apple's old website from the archives while making use of flex, positioning, and gradients.
+This project is about building a responsive website using the various positioning and dispaly values from mobile view up to deskop. The website has two breakpoints 676px and 1023px
 The features of this project are listed below:
 
 1. Website has a header containing:
