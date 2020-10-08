@@ -535,7 +535,8 @@ footer .f-bottom p {
 .top-nav-wrap,
 .tablet-nav,
 .pipe,
-.logo-desktop {
+.logo-desktop,
+.last-funding {
   display: none;
 }
 
@@ -696,22 +697,8 @@ footer .f-bottom p {
     padding-bottom: 2rem;
   }
 
-  .last-funding {
-    display: none;
-  }
-
   .categories-article-middle-description a {
     font-size: 1.2rem;
-  }
-
-  .latest-funding-header p a {
-    display: inline-block;
-    padding: 1rem 1.5rem;
-  }
-
-  .pipe {
-    display: inline;
-    color: #f42;
   }
 
   .categories-grid {
@@ -800,8 +787,18 @@ footer .f-bottom p {
     justify-content: space-between;
   }
 
+  .latest-funding-header p a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+  }
+
   .last-funding {
     display: inline-block;
+  }
+
+  .pipe {
+    display: inline;
+    color: #f42;
   }
 
   .categories-grid {
